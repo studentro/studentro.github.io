@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 4fr 4fr 4fr;
+  margin:auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  
+}
+
+.grid-container > div {
+  
+  text-align: left;
+  padding: 20px 10px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color:dodgerblue;
+  
+}
+.item2 {
+    grid-column-start:3 ;
+    grid-column-end:4 ;
+    background-color: deepskyblue;
+    
+
+}
+.item3{
+    grid-column-start:1 ;
+    grid-row-start: 2;
+    grid-row-end:4;
+    background-color:blue;
+}
+.item4{
+    grid-column: 2 / 4;
+    background-color:skyblue;
+}
+.item5{
+    grid-column-start: 2 ;
+    background-color: darkblue;
+} 
+.item6{
+    grid-column-start:3 ;
+    
+    background-color: cadetblue;
+}
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+}
+.figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+    <h1>Extra Credit Grid</h1>
+
+    
+
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">
+    <figure>
+    <img src="labroador.jpg" alt="Labroador" style="width:100%">
+    <figcaption>Labroador Retriever.</figcaption>
+  </figure></div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+</div>
+
+</body>
+</html>
+
+
